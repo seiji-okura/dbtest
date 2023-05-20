@@ -2,7 +2,7 @@ import { connect } from "https://deno.land/x/cotton/mod.ts";
 import { Model, BaseModel, Column, Primary } from "https://deno.land/x/cotton/mod.ts";
 
 @Model("Users")
-export class User extends BaseModel{
+export class User extends Model{
     @Primary()
     id!: number;
     @Column()
